@@ -6,12 +6,14 @@
 
 # Users migration from elasticsearch < 6.3 versions
 - name: Check if old users file exists
+  become: yes
   stat:
     path: '{{ es_conf_dir }}/x-pack/users'
   register: old_users_file
   check_mode: no
 
 - name: Copy the old users file from the old deprecated location
+  become: yes
   copy:
     remote_src: yes
     force: no # only copy it if the new path doesn't exist yet
@@ -86,11 +88,23 @@
 #Copy Roles files
 - name: Copy roles.yml File for Instance
   become: yes
-  template: src=security/roles.yml.j2 dest={{ es_conf_dir }}/roles.yml owner=root group={{ es_group }} mode=0660 force=yes
+  template:
+    src: security/roles.yml.j2
+    dest: "{{ es_conf_dir }}/roles.yml"
+    owner: root
+    group: "{{ es_group }}"
+    mode: "0660"
+    force: yes
   when: es_roles is defined and es_roles.file is defined
 
 #Overwrite users_roles file
 - name: Copy User Roles
   become: yes
-  template: src=security/users_roles.j2 dest={{ es_conf_dir }}/users_roles owner=root group={{ es_group }} mode=0660 force=yes
+  template:
+    src: security/users_roles.j2
+    dest: "{{ es_conf_dir }}/users_roles"
+    owner: root
+    group: "{{ es_group }}"
+    mode: "0660"
+    force: yes
   when: manage_file_users and users_roles | length > 0
