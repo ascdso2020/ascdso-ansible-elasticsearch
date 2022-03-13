@@ -12,7 +12,7 @@
 - name: set fact manage_native_role to false
   set_fact: manage_native_roles=false
 
-- name: set fact manange_native_roles to true
+- name: set fact manage_native_roles to true
   set_fact: manage_native_roles=true
   when: es_roles is defined and es_roles.native is defined and es_roles.native.keys() | list | length > 0
 
@@ -137,7 +137,6 @@
   uri:
     url: "{{ es_api_uri }}/{{ es_security_api }}/role"
     method: GET
-    body_format: json
     user: "{{es_api_basic_auth_username}}"
     password: "{{es_api_basic_auth_password}}"
     force_basic_auth: yes

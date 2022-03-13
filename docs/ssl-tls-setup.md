@@ -68,13 +68,38 @@ $ bin/elasticsearch-certutil cert --ca ./my-ca.p12 --out ./my-keystore.p12 --pas
       xpack.security.authc.realms.file.file1.order: 0
       xpack.security.authc.realms.native.native1.order: 1
     es_heap_size: 1g
-    es_api_basic_auth_username: elastic
-    es_api_basic_auth_password: changeme
+    es_api_basic_auth_username: "elastic" # This is the default user created by the installation of elasticsearch
+    es_api_basic_auth_password: "changeme" # This is the default password created by the installation of elasticsearch
     es_enable_http_ssl: true
     es_enable_transport_ssl: true
     es_ssl_keystore: "files/certs/my-keystore.p12"
-    es_ssl_truststore: "files/certs/my-truststore.p12"
+    es_ssl_truststore: "files/certs/my-ca.p12"
     es_ssl_keystore_password: "keystore_password"
-    es_ssl_truststore_password: "truststore_password"
+    es_ssl_truststore_password: "ca_password"
     es_validate_certs: no
+```
+
+## Changing the default password of elastic user
+
+To change the default password of user elastic: 
+
+* Add this line to your playbook:
+
+```
+vars:
+  es_api_basic_auth_username: "elastic"
+  es_api_basic_auth_password: "changeme"
+  es_users:
+    native:
+      elastic:
+        password: "<new password>"
+```
+
+* Deploy your playbook
+* Update your playbook with:
+
+```
+vars:
+  es_api_basic_auth_username: "elastic"
+  es_api_basic_auth_password: "<new password>"
 ```

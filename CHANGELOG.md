@@ -1,5 +1,185 @@
 # Changelog
 
+## 7.17.0
+
+* 7.17.0 as default version.
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#845](https://github.com/elastic/ansible-elasticsearch/pull/845) | [@jmlrt](https://github.com/jmlrt) | Remove CentOS 8 tests  |
+
+
+## 7.16.3
+
+* 7.16.3 as default version.
+* 6.8.23 as 6.x tested version
+
+## 7.16.2
+
+* 7.16.2 as default version.
+* 6.8.22 as 6.x tested version
+
+## 7.16.1
+
+* 7.16.1 as default version.
+* 6.8.21 as 6.x tested version
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#838](https://github.com/elastic/ansible-elasticsearch/pull/838) | [@mgreau](https://github.com/mgreau) | Add warning message about 8.x versions  |
+| [#830](https://github.com/elastic/ansible-elasticsearch/pull/830) | [@bfontaine](https://github.com/bfontaine) | README: fix link to ES licensing change blog post  |
+| [#831](https://github.com/elastic/ansible-elasticsearch/pull/831) | [@gaima8](https://github.com/gaima8) | command necessarily causes a change on each invocation breaking idempotency, wait_for accomplishes the same goal without the change  |
+| [#833](https://github.com/elastic/ansible-elasticsearch/pull/833) | [@Pablohn26](https://github.com/Pablohn26) | Fix broken link  |
+
+
+## 7.16.0
+
+* 7.16.0 as default version.
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#835](https://github.com/elastic/ansible-elasticsearch/pull/835) | [@jmlrt](https://github.com/jmlrt) | Remove Ubuntu 14.04 support  |
+| [#825](https://github.com/elastic/ansible-elasticsearch/pull/825) | [@darxriggs](https://github.com/darxriggs) | Remove duplicate entry from YAML  |
+| [#828](https://github.com/elastic/ansible-elasticsearch/pull/828) | [@ygel](https://github.com/ygel) | Rename master - main  |
+
+
+## 7.15.1
+
+* 7.15.1 as default version.
+
+## 7.15.0
+
+* 7.15.0 as default version.
+
+## 7.14.0
+
+* 7.14.0 as default version.
+* 6.8.18 as 6.x tested version
+
+## 7.13.4
+
+* 7.13.4 as default version.
+
+## 7.13.3
+
+* 7.13.3 as default version.
+* 6.8.17 as 6.x tested version
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#800](https://github.com/elastic/ansible-elasticsearch/pull/800) | [@chuckmilam](https://github.com/chuckmilam) | Minor correction for readability.  |
+
+
+## 7.13.2
+
+* 7.13.2 as default version.
+
+## 7.13.1
+
+* 7.13.1 as default version.
+
+## 7.13.0
+
+* 7.13.0 as default version.
+* 6.8.16 as 6.x tested version
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#796](https://github.com/elastic/ansible-elasticsearch/pull/796) | [@jmlrt](https://github.com/jmlrt) | Fails deployment when using tls without security  |
+| [#745](https://github.com/elastic/ansible-elasticsearch/pull/745) | [@v1v](https://github.com/v1v) | Support ubuntu-20  |
+
+
+## 7.12.1
+
+* 7.12.1 as default version.
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#793](https://github.com/elastic/ansible-elasticsearch/pull/793) | [@jmlrt](https://github.com/jmlrt) | [meta] update ubuntu-1804 during kitchen provisioning  |
+| [#787](https://github.com/elastic/ansible-elasticsearch/pull/787) | [@tobiashuste](https://github.com/tobiashuste) | Stop plugin install to fail in check mode  |
+
+
+## 7.12.0
+
+* 7.12.0 as default version.
+* 6.8.15 as 6.x tested version
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#789](https://github.com/elastic/ansible-elasticsearch/pull/789) | [@jmlrt](https://github.com/jmlrt) | Use ES_JAVA_HOME instead of JAVA_HOME  |
+| [#788](https://github.com/elastic/ansible-elasticsearch/pull/788) | [@jmlrt](https://github.com/jmlrt) | Fix deb and rpm url  |
+| [#784](https://github.com/elastic/ansible-elasticsearch/pull/784) | [@jmlrt](https://github.com/jmlrt) | [meta] fix changelog after 7.11.2 release  |
+
+
+## 7.11.2
+
+* 7.11.2 as default version.
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#771](https://github.com/elastic/ansible-elasticsearch/pull/771) | [@Bernhard-Fluehmann](https://github.com/Bernhard-Fluehmann) | Cleanup remove keystore entries  |
+| [#782](https://github.com/elastic/ansible-elasticsearch/pull/782) | [@kuops](https://github.com/kuops) | Fix README.md Multi Node Server Installations  |
+| [#777](https://github.com/elastic/ansible-elasticsearch/pull/777) | [@DanRoscigno](https://github.com/DanRoscigno) | Update ssl-tls-setup.md  |
+
+
+## 7.11.1
+
+* 7.11.1 as default version.
+* 6.8.14 as 6.x tested version
+
+| PR                                                                | Author                                                       | Title                                          |
+|-------------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|
+| [#760](https://github.com/elastic/ansible-elasticsearch/pull/760) | [@jmlrt](https://github.com/jmlrt)                           | Add dedicated CI jobs for 6.x                  |
+| [#761](https://github.com/elastic/ansible-elasticsearch/pull/761) | [@rubarclk](https://github.com/rubarclk)                     | Fix Elasticsearch 7.x deb url                  |
+| [#769](https://github.com/elastic/ansible-elasticsearch/pull/769) | [@Bernhard-Fluehmann](https://github.com/Bernhard-Fluehmann) | Add support for elasticsearch-keystore entries |
+| [#765](https://github.com/elastic/ansible-elasticsearch/pull/765) | [@jmlrt](https://github.com/jmlrt)                           | Refactor Kitchen tests                         |
+| [#770](https://github.com/elastic/ansible-elasticsearch/pull/770) | [@jmlrt](https://github.com/jmlrt)                           | Remove OSS support for version >= 7.11.0       |
+| [#779](https://github.com/elastic/ansible-elasticsearch/pull/779) | [@jmlrt](https://github.com/jmlrt)                           | Fix "list native roles" task                   |
+
+
+## 7.10.2
+
+* 7.10.2 as default version.
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#753](https://github.com/elastic/ansible-elasticsearch/pull/753) | [@jmlrt](https://github.com/jmlrt) | Fix java install path when system has multiple java  |
+
+
+## 7.10.1
+
+* 7.10.1 as default version.
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#747](https://github.com/elastic/ansible-elasticsearch/pull/747) | [@fourstepper](https://github.com/fourstepper) | Fix idempotency for both supported CentOS versions  |
+| [#744](https://github.com/elastic/ansible-elasticsearch/pull/744) | [@v1v](https://github.com/v1v) | Support CentOS 8  |
+| [#736](https://github.com/elastic/ansible-elasticsearch/pull/736) | [@jmlrt](https://github.com/jmlrt) | Fix test-kitchen net-scp-error  |
+
+
+## 7.10.0
+
+* 7.10.0 as default version.
+
+
+| PR | Author | Title |
+| --- | --- | --- |
+| [#742](https://github.com/elastic/ansible-elasticsearch/pull/742) | [@jmlrt](https://github.com/jmlrt) | convert custom filter to python3  |
+| [#741](https://github.com/elastic/ansible-elasticsearch/pull/741) | [@jmlrt](https://github.com/jmlrt) | [meta] clean deprecated bumper script  |
+| [#740](https://github.com/elastic/ansible-elasticsearch/pull/740) | [@jmlrt](https://github.com/jmlrt) | fix some typos  |
+| [#728](https://github.com/elastic/ansible-elasticsearch/pull/728) | [@smutel](https://github.com/smutel) | Improve the documentation for TLS  |
+| [#739](https://github.com/elastic/ansible-elasticsearch/pull/739) | [@0xflotus](https://github.com/0xflotus) | fix: small error  |
+
+
 ## 7.9.3
 
 * 7.9.3 as default version.
@@ -166,7 +346,7 @@ You can now override the configuration files with your own versions by using the
 
 ### SSL/TLS Support
 
-Ansible-elasticsearch is now supporting SSL/TLS encryption. Please refer to [X-Pack Security SSL/TLS](https://github.com/elastic/ansible-elasticsearch/blob/master/docs/ssl-tls-setup.md) to configure it.
+Ansible-elasticsearch is now supporting SSL/TLS encryption. Please refer to [X-Pack Security SSL/TLS](https://github.com/elastic/ansible-elasticsearch/blob/main/docs/ssl-tls-setup.md) to configure it.
 
 | PR                                                                | Author                                         | Title                                        |
 |-------------------------------------------------------------------|------------------------------------------------|----------------------------------------------|
